@@ -165,11 +165,17 @@ a:focus {
 }
 
 .intro .intro-body .intro-text {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .intro .intro-body .intro-text-s {
-    font-size: 14px;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 48em){
+    .intro{
+        text-align: justify;
+    }
 }
 
 @media(min-width:768px) {
