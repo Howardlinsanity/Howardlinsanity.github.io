@@ -21,11 +21,11 @@
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
-    <!-- Morphext imports -->
+    <!-- Morphist imports -->
     <link rel="stylesheet" href="animate.css-master/animate.min.css">
     <link rel="stylesheet" href="animate.css-master/animate.css">
-    <link rel="stylesheet" href="Morphext/dist/morphext.css">
-    <script src="Morphext/dist/morphext.min.js"></script>
+    <link rel="stylesheet" href="Morphist/dist/Morphist.css">
+    <script src="Morphist/dist/Morphist.min.js"></script>
 
 </head>
 
@@ -73,7 +73,11 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">Howard Lin</h1>
-                        <p class="intro-text">A <span id="js-rotating">student,programmer</span></p>
+                        <p class="intro-text-s">I am a
+                          <ul id="js-rotating">
+                              <li> <a class="intro-text" href="#about">Student</a></li>
+                              <li> <a class="intro-text" href="#projects">Programmer</a></li>
+                          </ul>
                         <a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
@@ -150,14 +154,19 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
 
-    <!-- Morphext Javascript and Customization-->
-    <script src="Morphext/dist/morphext.js"></script>
+    <!-- Morphist Javascript and Customization-->
+    <script src="Morphist/dist/Morphist.js"></script>
         <script>
-            $("#js-rotating").Morphext({
-                animation: "flipInX",
-                speed: 3000,
-                complete: function () {
-                }
+        $("#js-rotating").Morphist({
+            // The entrance animation type (In).
+            animateIn: "tada",
+            // The exit animation type (Out). Refer to Animate.css for a list of available animations.
+            animateOut: "bounceOut",
+            // The delay between the changing of each object in milliseconds.
+            speed: 3500,
+            complete: function () {
+                // Called after the entrance animation is executed.
+            }
             });
         </script>
 </body>
