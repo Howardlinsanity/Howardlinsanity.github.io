@@ -147,7 +147,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(../img/night-sky.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -165,7 +165,11 @@ a:focus {
 }
 
 .intro .intro-body .intro-text {
-    font-size: 18px;
+    font-size: 24px;
+}
+
+.intro .intro-body .intro-text-s {
+    font-size: 16px;
 }
 
 @media(min-width:768px) {
@@ -179,7 +183,11 @@ a:focus {
     }
 
     .intro .intro-body .intro-text {
-        font-size: 26px;
+        font-size: 60px;
+    }
+
+    .intro .intro-body .intro-text-s {
+        font-size: 40px;
     }
 }
 
