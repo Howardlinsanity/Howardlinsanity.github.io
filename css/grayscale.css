@@ -860,6 +860,7 @@ footer {
 }
 
 #footer .actions {
+  display: inline-block;
   position: absolute;
   left: 1em;
   top: 0.25em;
@@ -869,7 +870,7 @@ footer {
 }
 
 #footer .actions li {
-  font-size: 1.25em;
+  font-size: 2.25em;
   margin: 0;
 }
 
@@ -878,6 +879,7 @@ footer {
 }
 
 #footer .menu {
+  display: inline-block;
   position: absolute;
   right: 2em;
   top: 0;
@@ -887,7 +889,7 @@ footer {
 }
 
 #footer .menu li {
-  font-size: 0.9em;
+  font-size: 1.5em;
 }
 
 ::-moz-selection {
