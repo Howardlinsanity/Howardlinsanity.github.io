@@ -155,7 +155,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/night-sky.jpg) no-repeat bottom center scroll;
+    background: url(../img/about.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -172,11 +172,28 @@ a:focus {
     font-size: 40px;
 }
 
-.intro .intro-body .intro-text {
+.intro .intro-body .intro-body-text {
     font-size: 30px;
     font-family: "Arial Black";
-    font-style: italic;
-    text-decoration: underline;
+    text-align: center;
+}
+
+.about {
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 10px;
+    font-family: "Arial Black";
+    color: #fff;
+    background: url(../img/night-sky.jpg) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 @media(min-width:768px) {
@@ -189,8 +206,14 @@ a:focus {
         font-size: 100px;
     }
 
-    .intro .intro-body .intro-text {
+    .intro .intro-body .intro-body-text {
         font-size: 60px;
+    }
+
+    .about {
+      height: 100%;
+      padding: 0;
+      font-size: 20px;
     }
 }
 
@@ -870,7 +893,7 @@ footer {
 }
 
 #footer .actions li {
-  font-size: 2.25em;
+  font-size: 1.5em;
   margin: 0;
 }
 
@@ -889,7 +912,7 @@ footer {
 }
 
 #footer .menu li {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 ::-moz-selection {
